@@ -4,7 +4,7 @@ with
     ),
     orders as (
         select * from {{ ref('stg_orders') }}
-    )
+    ),
     customer_orders as (
         select 
             c.customer_id,
